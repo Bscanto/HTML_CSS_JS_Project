@@ -1,4 +1,11 @@
-# Project-game
+Repositório de Estudos - HTML, CSS e JavaScript
 
-> This was a simple game I made with HTML and CSS for my 3 year old nephew to play.
-Hope you enjoy!
+Olá!
+
+Este repositório serve como um registro de meus estudos em HTML, CSS e JavaScript. 
+Aqui, você encontrará diversos exemplos de código, exercícios e projetos que realizei ao longo da minha jornada de aprendizado.
+
+
+
+Tenho por objetivo aprofundar meu conhecimento em HTML, CSS e JavaScript.
+Praticar a criação de websites e aplicações web.
