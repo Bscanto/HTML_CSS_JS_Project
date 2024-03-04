@@ -138,7 +138,7 @@ p {
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: var(--onda);
+  background-image: var(--onda-clara);
   /* word-break: break-all; */
 }
 
