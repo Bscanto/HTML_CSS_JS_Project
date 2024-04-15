@@ -45,3 +45,5 @@ This game does not require any specific library or software.
 ## Contributing
 
 If you want to contribute to this project, simply fork the repository, make your changes and submit a pull request. I will be happy to evaluate your contributions! 
+
+![tela](./img/tela.PNG)
