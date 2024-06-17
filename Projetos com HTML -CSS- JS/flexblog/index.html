@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="./style.css" />
+	<script src="./script.js"></script>
+<script>
+	
+</script>
 </head>
 <body>
 
@@ -49,18 +54,18 @@
 		</div>
 	</section>
 	
-	<section class="produtos" id="produtos">
+	<section class="produtos " id="produtos">
 		<h1>Relógios</h1>
 		<div class="produtos-container">
-			<div class="produtos-item purple">
+			<div class="produtos-item classico">
 				<h2>Clássico</h2>
 				<img src="img/relogio1.jpg" alt="Relógio Clássico">
 			</div>
-			<div class="produtos-item pink">
+			<div class="produtos-item elegante">
 				<h2>Elegante</h2>
 				<img src="img/relogio2.jpg" alt="Relógio Elegante">
 			</div>
-			<div class="produtos-item blue">
+			<div class="produtos-item esportivo">
 				<h2>Esportivo</h2>
 				<img src="img/relogio3.jpg" alt="Relógio Esportivo">
 			</div>
@@ -68,7 +73,6 @@
 	</section>
 	
 	<section class="preco" id="preco">
-		<h1>Preços</h1>
 		<div class="preco-item">
 			<h2>Bronze</h2>
 			<span><sup>R$</sup>299</span>
@@ -154,4 +158,19 @@
 	</footer>
 
 </body>
+<script>
+  const qualidadeItems = document.querySelectorAll('.qualidade-item');
+
+  qualidadeItems.forEach(item => {
+    item.style.opacity = 0; /* Começa com opacidade 0 (transparente) */
+  });
+
+  window.addEventListener('load', () => {
+    qualidadeItems.forEach((item, index) => {
+      setTimeout(() => {
+        item.style.opacity = 1; /* Aumenta a opacidade para 1 (opaco) */
+      }, index * 300); 
+    });
+  });
+</script>
 </html>
