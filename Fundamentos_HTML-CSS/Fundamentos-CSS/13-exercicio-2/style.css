@@ -23,3 +23,12 @@ li {
     height: 250px;
     width: 400px;
 }
+
+.selected {
+  background-color: #363338;
+  border: 4px solid #0088d8;
+}
+
+.hidden {
+  display: none;
+}
