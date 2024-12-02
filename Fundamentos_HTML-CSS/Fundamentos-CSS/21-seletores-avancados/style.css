@@ -3,7 +3,7 @@ li:nth-child(2) {
   color: #f00;
 }
 
-/*-
+
 li:hover {
   background-color: #999;
 }
@@ -27,5 +27,3 @@ li:last-child {
 li:not(:first-child) {
   color: rgb(0, 255, 255);
 }
-*/
-
