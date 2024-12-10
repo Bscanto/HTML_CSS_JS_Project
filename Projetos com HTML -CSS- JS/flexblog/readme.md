@@ -1,3 +1,3 @@
-# Criação de um siteVlog de uma marca de relogio FlexWatch
+# Criação de um flexblog de uma marca de relogio FlexWatch
 
 ![flexblog](flexblog.gif)
