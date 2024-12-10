@@ -1,0 +1,18 @@
+{
+  "name": "children's-jumping-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^8.0.3"
+  }
+}
