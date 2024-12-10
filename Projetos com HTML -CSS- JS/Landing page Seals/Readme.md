@@ -1,4 +1,4 @@
 ## Projeto landing page seals, produzido curso Css OneBitCode.
 
-![GIF](animação.gif)
+![GIF](animacao.gif)
 
