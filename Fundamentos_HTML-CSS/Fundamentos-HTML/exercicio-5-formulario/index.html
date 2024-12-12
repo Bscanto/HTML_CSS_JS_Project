@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario html exercicio 5</title>
+</head>
+
+<body>
+  <form>
+    <h1>Formulário de Inscrição</h1>
+    <br>
+    <div></div>
+    <!-- Campo de texto -->
+    <label for="nome">Nome: </label>
+    <br>
+    <input type="text" id="nome" name="nome" required>
+    <br><br>
+  </div>
+
+  <div>
+    <!-- Campo de email -->
+    <label for="email">Email: </label>
+    <br>
+    <input type="email" id="email" name="email" required>
+    <br><br>
+  </div>
+
+  <div>
+      <!-- Campo de email -->
+      <label for="WhatsApp">WhatsApp: </label>
+      <br>
+      <input type="text" id="WhatsApp" name="WhatsApp" required>
+      <br><br>
+    </div>
+
+    <div>
+       <!-- Campo de seleção radio -->
+    <label>Área de atuação: :</label>
+    <br>
+    <input type="radio"  name="area"  id="dev" value="dev">
+    <label for="dev">Desenvolvimento</label>
+
+    <input type="radio" name="area" id="qa" value="qa" required>
+    <label for="qa">Quality Assurance (QA)</label>
+
+    <input type="radio" name="area" id="dados" value="dados" required>
+    <label for="dados">Análise de Dados</label>
+
+    <input type="radio" name="area" id="infra" value="infra" required>
+    <label for="infra">Infraestrutura</label>
+    <br><br>
+  </div>
+
+  <div>
+     <!-- Campo de observação -->
+    <label for="observacoes">Observações:</label>
+    <br>
+    <textarea id="observacoes" name="observacoes"></textarea>
+  </div>
+  <br>
+  
+  <input type="checkbox" id="ofertas" name="ofertas" checked required />
+  <label for="ofertas">Desejo receber novidades e ofertas por email.</label>
+  <br>
+  <input type="submit" value="Enviar" />
+  </form>
+</body>
+
+</html>
