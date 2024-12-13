@@ -1,3 +1,3 @@
-## Projeto pIZZARIA, produzido curso Css OneBitCode.
+## Projeto Pizzaria, produzido curso Css OneBitCode.
 
 ![gif](pizzaria.gif)
