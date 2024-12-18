@@ -10,3 +10,5 @@ console.warn(nome)
 
 //console.log(confirmacao)
 alert("Olá Mundo")
+prompt("Olá")
+confirm("Confirma")
