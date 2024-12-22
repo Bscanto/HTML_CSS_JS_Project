@@ -1,19 +1,36 @@
-let metros = parseFloat(prompt("Digite um valor em metros:"));
+let medida = parseFloat(prompt("Digite um valor em metros:"));
 
-const converssão = prompt("Escolha uma Alternativa: \n1) milímetros(mm)\n2) centimetros(cm)\n3) decímetro(dm)\n4) decâdametro(dam)\n5) hectômetro(hm)\n6) quilômetro(km)")
+const unidade = prompt(
+  "Para qual unidade de medida deseja converter?" +
+  "\n1 - milímetros (mm)" +
+  "\n2 - centímetros (cm)" +
+  "\n3 - decímetros (dm)" +
+  "\n4 - decâmetros (dam)" +
+  "\n5 - hectômetro (hm)" +
+  "\n6 - quilômetro (km)"
+)
 
 
 
-switch (resultado){
-  case "a":
-    alert("O resultado é 'a'")
+switch (unidade) {
+  case "1":
+    case "milímetros":
+      case "mm":
+    alert("Resultado: " + medida + "m = " + medida * 1000 + "mm")
     break
-  case "b":
-    alert("O resultado é 'b'")
+  case "2":
+    alert("Resultado: " + medida + "m = " + medida * 100 + "cm")
     break
-  case "c":
-    alert("O resultado é 'c'")
+  case "3":
+    alert("Resultado: " + medida + "m = " + medida * 10 + "dm")
     break
-  default:
-    alert("Finalizando...")
+  case "4":
+    alert("Resultado: " + medida + "m = " + medida / 10 + "dam")
+    break
+  case "5":
+    alert("Resultado: " + medida + "m = " + medida / 100 + "hm")
+    break
+  case "6":
+    alert("Resultado: " + medida + "m = " + medida / 1000 + "km")
+    break
 }
