@@ -26,7 +26,6 @@ do {
     default:
       alert("Opção inválida!")
   }
-
 } while (opcao !== "3");
 
 
