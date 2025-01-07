@@ -81,3 +81,40 @@ height: 100%;
 display: inline-block;
 background-color: rgba(0, 0, 0, 0.8);
 }
+
+.banner .slidearea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.banner h1 span{
+  color: #B28756;
+}
+
+.banner h2 {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.banner a {
+  display: block;
+  background-color: #B28756;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 40px;
+  padding:10px 30px;
+  border-radius: 20px;
+}
