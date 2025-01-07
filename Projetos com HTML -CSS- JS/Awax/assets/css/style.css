@@ -118,3 +118,23 @@ background-color: rgba(0, 0, 0, 0.8);
   padding:10px 30px;
   border-radius: 20px;
 }
+
+
+.banner .sliders-pointer {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  margin-top: -50PX;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #B28756;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+}

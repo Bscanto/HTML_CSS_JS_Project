@@ -52,11 +52,25 @@
           </div>
         </div>
         <div class="slide">
-          ...2
+          <div class="slidearea">
+            <h1>Design is about <br> <span>problem-solving</span></h1>
+            
+
+          <a href="">Get in touvh!</a>
+          </div>
         </div>
         <div class="slide">
-          ...3
+          <div class="slidearea">
+            <h1>Design is about <br> <span>creating experiences</span></h1>
+          <a href="">Get in touvh!</a>
+          </div>
         </div>
+      </div>
+
+      <div class="sliders-pointer">
+        <div class="pointer" data-slide="0"></div>
+        <div class="pointer" data-slide="1"></div>
+        <div class="pointer" data-slide="2"></div>
       </div>
     </section>
 
@@ -66,6 +80,42 @@
   <footer>
 
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sliders = document.querySelectorAll('.banner .slide');
+      const pointers = document.querySelectorAll('.banner .pointer');
+      
+      // Função para mudar o slide
+      function changeSlide(index) {
+        // Ocultar todos os slides
+        sliders.forEach((slide, i) => {
+          slide.style.display = (i === index) ? 'inline-block' : 'none';
+        });
+        
+        // Atualizar a aparência dos pontos (pointers)
+        pointers.forEach((pointer, i) => {
+          if (i === index) {
+            pointer.style.backgroundColor = '#B28756'; // Cor para o ponto ativo
+          } else {
+            pointer.style.backgroundColor = ''; // Cor para os pontos inativos
+          }
+        });
+      }
+  
+      // Adicionar evento de clique nos pontos (pointers)
+      pointers.forEach((pointer) => {
+        pointer.addEventListener('click', function() {
+          const index = parseInt(pointer.getAttribute('data-slide'));
+          changeSlide(index);
+        });
+      });
+  
+      // Inicializar o primeiro slide ativo
+      changeSlide(0);
+    });
+  </script>
+  
 </body>
 
 </html>
