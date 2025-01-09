@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Montserrat', Ariel, Helvetica, sans-serif;
+  font-size: 13px;
+  overflow-x: hidden;
 }
 header {
   height: 100px;
@@ -137,4 +139,26 @@ background-color: rgba(0, 0, 0, 0.8);
   border-radius: 8px;
   margin: 5px;
   cursor: pointer;
+}
+
+
+.default {
+  background-color: red;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.default .section-title {
+  text-align: center;
+}
+
+.default .section-desc {
+  text-align: center;
+}
+
+.default .section-bory {
+  max-width: 1300px;
+  margin: auto;
+  min-height:100px;
+  background-color: #ccc;
 }
