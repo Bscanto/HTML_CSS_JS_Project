@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', Ariel, Helvetica, sans-serif;
+  font-family: "Montserrat", Ariel, Helvetica, sans-serif;
   font-size: 13px;
   overflow-x: hidden;
 }
@@ -30,7 +30,7 @@ header {
 .menu {
   flex: 1;
   display: flex;
-  justify-content:  flex-end;
+  justify-content: flex-end;
 }
 
 .menu ul,
@@ -45,7 +45,7 @@ header {
 .menu li a {
   text-decoration: none;
   color: #fff;
-  text-transform:  uppercase;
+  text-transform: uppercase;
   font-weight: 600;
   padding-left: 10px;
   padding-right: 10px;
@@ -57,31 +57,29 @@ header {
 
 .menu li a:hover,
 .menu .active a {
-  border-bottom: 6px solid #B28756;
+  border-bottom: 6px solid #b28756;
   color: #ccc;
 }
 
 .banner {
-  height:calc(100vh - 100px);
-  background-color:#333;
+  height: calc(100vh - 100px);
+  background-color: #333;
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-position: bottom;
   overflow: hidden;
-   
 }
 
 .banner .sliders {
   width: 1000vw;
   height: 100%;
-  
 }
 
 .banner .slide {
-width: 100vw;
-height: 100%;
-display: inline-block;
-background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .banner .slidearea {
@@ -99,8 +97,8 @@ background-color: rgba(0, 0, 0, 0.8);
   font-size: 50px;
 }
 
-.banner h1 span{
-  color: #B28756;
+.banner h1 span {
+  color: #b28756;
 }
 
 .banner h2 {
@@ -108,25 +106,37 @@ background-color: rgba(0, 0, 0, 0.8);
   margin-top: 20px;
 }
 
-.banner a {
-  display: block;
-  background-color: #B28756;
+.button {
+  display: inline-block;
+  background-color: #b28756;
   color: #fff;
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 600;
   text-decoration: none;
   margin-top: 40px;
-  padding:10px 30px;
+  padding: 10px 30px;
   border-radius: 20px;
 }
 
+.banner a {
+  display: block;
+  background-color: #b28756;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
 
 .banner .sliders-pointer {
   width: 100vw;
   height: 20px;
   position: absolute;
-  margin-top: -50PX;
+  margin-top: -50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,30 +145,93 @@ background-color: rgba(0, 0, 0, 0.8);
 .banner .pointer {
   width: 15px;
   height: 15px;
-  border: 2px solid #B28756;
+  border: 2px solid #b28756;
   border-radius: 8px;
   margin: 5px;
   cursor: pointer;
 }
 
-
 .default {
-  background-color: red;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.default .section-title {
+.default .section-title,
+.default .section-desc {
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-title {
+  font-size: 20px;
 }
 
 .default .section-desc {
-  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .default .section-bory {
   max-width: 1300px;
   margin: auto;
-  min-height:100px;
-  background-color: #ccc;
 }
+
+.default.light {
+  background-color: #f7f7f7;
+}
+
+.default.light .section-title {
+  color: #000;
+}
+
+.default.light .section-title, 
+.default.light .section-bory {
+  color: #000;
+}
+
+.default.dark {
+  background-color: #000;
+}
+
+.default.dark .section-title,
+.default.dark .section-bory {
+  color: #fff;
+}
+
+
+
+
+
+
+
+/* 
+CSS DE ÁREAS ESPECIFICAS
+*/
+
+.section-aboutus {
+  display: flex;
+}
+
+.section-aboutus--left {
+  flex: 1;
+}
+
+.section-aboutus--left p{
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.section-aboutus--rigth {
+  width: 520px;
+  text-align: center;
+}
+
+.section-aboutus--rigth img {
+  width: 480px;
+  box-shadow: 0px 5px 10px #333;
+}
+
+
