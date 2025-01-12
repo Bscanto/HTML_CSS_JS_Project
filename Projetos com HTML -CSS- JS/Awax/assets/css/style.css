@@ -187,7 +187,7 @@ header {
   color: #000;
 }
 
-.default.light .section-title, 
+.default.light .section-title,
 .default.light .section-bory {
   color: #000;
 }
@@ -201,12 +201,6 @@ header {
   color: #fff;
 }
 
-
-
-
-
-
-
 /* 
 CSS DE ÁREAS ESPECIFICAS
 */
@@ -219,7 +213,7 @@ CSS DE ÁREAS ESPECIFICAS
   flex: 1;
 }
 
-.section-aboutus--left p{
+.section-aboutus--left p {
   font-size: 14px;
   line-height: 25px;
 }
@@ -262,9 +256,9 @@ CSS DE ÁREAS ESPECIFICAS
 }
 
 .section-projects {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-projects--filters {
@@ -277,7 +271,7 @@ align-items: center;
 
 .section-projects--filters ul,
 .section-projects--filters li {
-list-style: none;
+  list-style: none;
 }
 
 .section-projects--filters li {
@@ -289,17 +283,16 @@ list-style: none;
   color: #555;
   border-bottom: 3px solid #ccc;
   cursor: pointer;
-  }
+}
 
-  .section-projects--filters li:hover,
-  .section-projects--filters li.active {
-    border-bottom:3px solid #b28756;
-  }
+.section-projects--filters li:hover,
+.section-projects--filters li.active {
+  border-bottom: 3px solid #b28756;
+}
 
-  .section-projects--filters li:first-child {
-    border-left:0;
-  }
-
+.section-projects--filters li:first-child {
+  border-left: 0;
+}
 
 .section-projects--photos {
   width: 100vw;
@@ -315,16 +308,36 @@ list-style: none;
 }
 
 .section-projects-photoarea {
+  position: relative;
   margin: 10px;
   width: 260px;
   height: 160px;
 }
 
-.section-projects-photoarea img{
+.section-projects-photoarea img {
   width: inherit;
   height: inherit;
+  display: block;
 }
 
 .section-projects--photoinfo {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.section-projects--photoinfo h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-projects-photoarea:hover .section-projects--photoinfo {
+  display: flex; /* Exibir a informação ao passar o mouse */
 }
