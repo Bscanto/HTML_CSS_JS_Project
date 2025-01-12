@@ -48,21 +48,21 @@
             <h1>Design is about <br> <span>comunication</span></h1>
             <h2>Call Us: +00 0 1234 5678</h2>
 
-          <a href="" class="button">Get in touvh!</a>
+            <a href="" class="button">Get in touvh!</a>
           </div>
         </div>
         <div class="slide">
           <div class="slidearea">
             <h1>Design is about <br> <span>problem-solving</span></h1>
-            
 
-          <a href="" class="button">Get in touvh!</a>
+
+            <a href="" class="button">Get in touvh!</a>
           </div>
         </div>
         <div class="slide">
           <div class="slidearea">
             <h1>Design is about <br> <span>creating experiences</span></h1>
-          <a href="" class="button">Get in touvh!</a>
+            <a href="" class="button">Get in touvh!</a>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
             <h4>High Quality Design</h4>
             <p>Praesent metus urna, feugiata placerat elementum</p>
           </div>
-          
+
           <div class="section-service">
             <img src="./assets/images/estrela.png" alt="">
             <h4>Modern Design</h4>
@@ -124,9 +124,115 @@
             <p>Many desktop publishing packages and page editors</p>
           </div>
 
-         
+
         </div>
       </div>
+    </section>
+
+
+    <section class="default light">
+      <div class="section-title">Our Projects</div>
+      <div class="section-desc">What we Create</div>
+      <div class="section-bory">
+        <div class="section-projects">
+          <div class="section-projects--filters">
+            <ul>
+              <li>All</li>
+              <li class="active">Photos</li>
+              <li>branding</li>
+              <li>Adverts</li>
+              <li>Development</li>
+              <li>Misc</li>
+            </ul>
+          </div>
+
+          <div class="section-projects--photos">
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto1.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto2.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto3.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto5.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto6.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto7.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto1.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto2.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto3.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto4.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="section-projects--photo">
+              <div class="section-projects-photoarea">
+                <div class="section-projects--photoinfo"></div>
+                <img src="./media/foto5.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
     </section>
 
   </main>
@@ -140,14 +246,14 @@
     document.addEventListener("DOMContentLoaded", function () {
       const sliders = document.querySelectorAll('.banner .slide');
       const pointers = document.querySelectorAll('.banner .pointer');
-      
+
       // Função para mudar o slide
       function changeSlide(index) {
         // Ocultar todos os slides
         sliders.forEach((slide, i) => {
           slide.style.display = (i === index) ? 'inline-block' : 'none';
         });
-        
+
         // Atualizar a aparência dos pontos (pointers)
         pointers.forEach((pointer, i) => {
           if (i === index) {
@@ -157,20 +263,20 @@
           }
         });
       }
-  
+
       // Adicionar evento de clique nos pontos (pointers)
       pointers.forEach((pointer) => {
-        pointer.addEventListener('click', function() {
+        pointer.addEventListener('click', function () {
           const index = parseInt(pointer.getAttribute('data-slide'));
           changeSlide(index);
         });
       });
-  
+
       // Inicializar o primeiro slide ativo
       changeSlide(0);
     });
   </script>
-  
+
 </body>
 
 </html>
