@@ -451,3 +451,12 @@ margin-top: 5px;
 .section-team--social a:hover {
   background-color: #b28756;
 }
+
+.section-team .sliders {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.pointer.active {
+  background-color: #b28756;
+}
