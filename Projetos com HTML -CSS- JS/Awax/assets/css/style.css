@@ -119,6 +119,19 @@ header {
   border-radius: 20px;
 }
 
+.button-black {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
 .banner a {
   display: block;
   background-color: #b28756;
@@ -460,3 +473,230 @@ margin-top: 5px;
 .pointer.active {
   background-color: #b28756;
 }
+
+
+
+
+
+
+
+
+
+.section-aboutus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+/* Centralizando o conteúdo do cliente */
+.section-clients--avatar {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.section-clients--name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.section-clients--role {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: gray;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.section-aboutus--left {
+  margin-top: 50px;
+  margin-left: 20px;
+  max-width: 800px;
+  color: #999;
+  font-weight: 400;
+}
+
+.section-clients-quote img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+
+
+.section-aboutus .sliders-pointer-clients {
+  position: absolute;
+  margin-bottom: -200px;
+  display: flex;
+  justify-content: center;
+  width: 100%;;
+}
+
+.section-aboutus .pointer-clients {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #b28756;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.section-aboutus .pointer-clients.active {
+  background-color: #b28756;
+}
+
+.section-brand {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.section-brand--list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section-brand--list img{
+ width: 80px;
+}
+
+
+.section-brand--list li {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+.default .section-title--price,
+.default .section-desc--price {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.default .section-title--price {
+  font-size: 20px;
+}
+
+.default .section-desc--price {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+/* Seção principal com fundo branco */
+.default .light {
+  background-color: #fff;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contêiner de preços */
+.section-price {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Títulos */
+.section-title--price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-desc--price {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilo para o contêiner dos slides */
+.sliders-price {
+  display: flex; /* Flexbox para alinhar os slides lado a lado */
+  justify-content: space-between; /* Espaço igual entre os slides */
+  flex-wrap: wrap; /* Para garantir que os slides quebrem em uma nova linha em telas menores */
+  gap: 20px; /* Espaço entre os slides */
+  margin-top: 20px;
+}
+
+/* Estilo para cada slide */
+.slide {
+  width: 23%; /* Cada slide ocupa 23% da largura da tela, permitindo 4 por linha */
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-sizing: border-box;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide:hover {
+  transform: translateY(-5px); /* Efeito de hover */
+}
+
+/* Estilo interno dos slides */
+.slidearea-price {
+  padding: 10px;
+}
+
+.slidearea-price h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.slidearea-price h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b28756;
+  margin-bottom: 10px;
+}
+
+.slidearea-price h6 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.slidearea-price p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .slide {
+    width: 48%; /* 2 slides por linha em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .slide {
+    width: 100%; /* 1 slide por linha em telas pequenas */
+  }
+}
+
+
