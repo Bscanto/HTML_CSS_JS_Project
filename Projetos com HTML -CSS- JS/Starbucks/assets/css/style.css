@@ -255,15 +255,15 @@ background-color: #e8e9ee;
 
 .area4--img1 {
   background-image: url('../images/bg3.jpg');
+  margin-left: 250px;
   background-position: left;
 }
 
-
 .area5 {
-  background-image: url("../images/bg4.jpg");
+  background-image: url('../images/bg4.jpg');
   background-size: cover;
   background-position: center;
-  height: 650px;
+  height: 600px;
 }
 
 footer {
