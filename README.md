@@ -21,12 +21,13 @@ Os projetos variam em complexidade, desde exercícios básicos até projetos mai
 1. Clone este repositório:
    ```bash
    git clone https://github.com/Bscanto/HTML_CSS_JS_Project.git
+   ```
 
 2. Acesse a pasta do projeto desejado:
 
-   ´´´
+   ```bash
    cd estudos-html-css-js/projetos/projeto-01-relogio-digital
-   ´´´
+   ```
 
 3. Abra o arquivo index.htmlde cada projeto para visualizar.
 
