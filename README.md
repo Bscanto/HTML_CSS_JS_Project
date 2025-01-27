@@ -25,9 +25,7 @@ Os projetos variam em complexidade, desde exercícios básicos até projetos mai
 
 2. Acesse a pasta do projeto desejado:
 
-   ```bash
-   cd estudos-html-css-js/projetos/projeto-01-relogio-digital
-   ```
+ - Acesse o projeto ou pasta desejado e abra em seu navegador o index.html.
 
 3. Abra o arquivo index.htmlde cada projeto para visualizar.
 
