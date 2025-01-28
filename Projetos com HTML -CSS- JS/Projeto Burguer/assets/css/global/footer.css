@@ -1,0 +1,122 @@
+/*FOOTER*/
+#newsletter {
+  position: relative;
+  z-index: 3;
+}
+
+.bg-primaria {
+  background: #FE6A0f;
+}
+
+.p30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.branco {
+  color:  #fff !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.newsletter--container {
+display: flex;
+justify-content: center;
+}
+
+.fz24 {
+  width: 700px;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+#newsletter form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: initial;
+}
+
+.form {
+  width: 400px;
+  margin-left: -15p;
+  margin-right: -15px;
+  zoom: 1;
+}
+
+.floating-placeholder {
+  height: 40px;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.5s ease;
+}
+
+#newsletter input {
+  padding-right:20px;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 18px;
+}
+
+.floating-placeholder input:hover {
+  background-image: linear-gradient(to center, #ffc765, #ffc765), linear-gradient(to center, #fff, #fff);
+}
+
+.floating-placeholder input{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 0;
+  outline: none !important;
+  box-shadow: none !important;
+  display: block;
+  background: transparent;
+  text-indent: 13px;
+  color: inherit;
+  background-image: linear-gradient(#FE6A0f, #FE6A0f), linear-gradient(#ccc, #ccc);
+  background-size: 0 2px, 100% 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center 100%;
+}
+
+#newsletter button {
+  position: absolute;
+  right: 0;
+  border: 0;
+  background-color:transparent;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+footer {
+  width: 1300px;
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 20px;
+}

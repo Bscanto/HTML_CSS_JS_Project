@@ -1,0 +1,54 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Button */
+.button {
+  display: block;
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+ }
+
+.button:hover {
+  background-color: var(--cor-p1);
+}
+
+
+/* LOGO */
+.logo a{
+  font-family: 'Calistoga';
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo  span {
+  color: var(--cor-p1);
+}
+
+@media (max-width: 900px) {
+  .logo a {
+    font-size: 24px;
+  }
+
+}

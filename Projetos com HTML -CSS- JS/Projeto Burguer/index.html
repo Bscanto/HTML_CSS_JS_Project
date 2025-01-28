@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
   <link rel="stylesheet" href="./assets/css/style.css">
- <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
-  <title>Bc - Burguer</title>
+  <title>BC - Burguer</title>
 
 </head>
+
 <body>
+  <header class="header-bg">
+    <div class="header container">
+      <span class="logo"><a href="#">BC <span>&#8226</span> Burger</a></span> </a>
+
+      <nav aria-label="primaria">
+        <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+        <ul class="header-menu">
+          <li><a href=""><img src="./assets/images/quem somos.png" alt=""> Quem Somos</a></li>
+          <li><a href=""><img src="./assets/images/burguer.png" alt="" /> Cardápio</a></li>
+          <li><a href=""><img src="./assets/images/contato.png" alt=""> Contato</a></li>
+          <a href="" class="button">Fazer pedido</a>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+  <!--Novidades e enviar email-->
+  <div id="newsletter" class="p30 bg-primaria text-center branco">
+    <div class="newsletter--container ">
+      <span class="fz24">Fique por dentro de nossas novidades!</span>
+      <form method="post" name="form-newsletter" id="form-newsletter" action="#" class="form col-sm-4">
+        <div class="floating-placeholder">
+          <input id="newsletter-email" name="newsletter-email" type="text" required="" placeholder="Digite seu email" />
+          <input type="hidden" name="origem" value="/cardapio-listagem">
+
+        </div>
+        <button type="submit" name="submit" class="iron uppercase">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="burguer-footer">
+      <div class="footer--content">
+
+      </div>
+
+      <div class="container-fluid">
+        <span>Hamburgueria Le Pinguê 2017 - Todos os direitos reservados | <a href="https://www.linkedin.com/in/brunosilvacanto/" title="Marketing Digital" target="_blank">By Bruno Canto</a></span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
   
-
-
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
