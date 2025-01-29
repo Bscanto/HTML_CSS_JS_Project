@@ -1,5 +1,12 @@
 .header-bg {
-  background-color: var(--cor-12);
+  background-color: var(--cor-10);
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header {
@@ -27,10 +34,11 @@
   align-items: center;
   gap: 8px;
   position: relative;
+  color: inherit;
 }
 
 .header-menu li > a:hover {
-  color: var(--cor-p1);
+  color: var(--cor-p4);
 }
 
 .header-menu a {
@@ -40,19 +48,33 @@
 }
 
 .header-menu img {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+  transition: fill 0.3s ease;
 }
 
-.header-menu ul:after {
+.header-menu li:hover {
+  color: var(--cor-p4);
+}
+
+.header-menu li:after {
   content: "";
   display: block;
   height: 2px;
-  width: 0px;
-  background: var(--cor-0);
+  width: 100%;
+  background: var(--cor-p4);
   position: absolute;
-  margin-top: -4px;
-  transition: width 0.3s ease;
+  bottom: 4px;
+  transition: width 0.5s ease;
+  width: 0;
+}
+
+.header-menu li:hover::after {
+  width: 100%;
+}
+
+.header-menu li a:hover img {
+  filter: invert(39%) sepia(76%) saturate(278%) hue-rotate(4deg) brightness(98%) contrast(102%); /* Ajustar para a cor desejada */
 }
 
 @media (max-width: 1000px) {
@@ -111,6 +133,8 @@
     justify-content: center;
   }
 }
+
+
 
 /*abre o menu suspenso abaixo de 400px */
 .menu-toggle {
