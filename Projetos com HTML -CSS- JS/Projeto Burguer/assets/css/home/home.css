@@ -1,0 +1,78 @@
+/*HERO*/
+.hero .container{
+  display: flex;
+}
+
+.hero .leftside,
+.hero .rightside {
+  flex: 1;
+}
+
+.hero .leftside {
+  padding-bottom: 150px;
+}
+
+.hero h1 {
+  font-family: 'calistoga';
+  font-size: 72px;
+  line-height: 74px;
+  margin-top: 100px;
+}
+.hero h1 span {
+  font-size: 36px;
+}
+
+.hero p {
+  font-family: 'inter';
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 50px;
+}
+
+.hero .rightside {
+  text-align: center;
+}
+
+.hero .rightside img{
+  width: auto;
+  height: 600px;
+}
+
+@media (max-width:1000px) {
+  .hero .container {
+    flex-direction: column;
+  }
+  .hero h1{
+    font-size: 48px;
+  }
+
+  .hero .leftside {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .hero .rightside {
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .hero .rightside img {
+    height: 300px;
+  }
+}
+@media (max-width:900px) {
+  .hero .container {
+    flex-direction: column;
+  }
+  .hero h1{
+    font-size: 64px;
+  }
+}
+
+@media (max-width:650px) {
+ 
+  .hero h1{
+    font-size: 48px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

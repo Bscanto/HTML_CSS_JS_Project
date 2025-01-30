@@ -74,10 +74,10 @@
 }
 
 .header-menu li a:hover img {
-  filter: invert(39%) sepia(76%) saturate(278%) hue-rotate(4deg) brightness(98%) contrast(102%); /* Ajustar para a cor desejada */
+  filter: invert(39%) sepia(76%) saturate(278%) hue-rotate(4deg) brightness(98%) contrast(102%); 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   .header-menu .button {
     display: none;
   }
@@ -108,7 +108,11 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
   .header-menu {
     gap: 5px;
   }
@@ -116,14 +120,7 @@
     padding: 8px 12px;
     font-size: 10px;
   }
-}
-
-@media (max-width: 550px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  
   .logo {
     margin-bottom: 16px;
     text-align: center;
@@ -133,7 +130,6 @@
     justify-content: center;
   }
 }
-
 
 
 /*abre o menu suspenso abaixo de 400px */
@@ -146,7 +142,7 @@
   color: var(--cor-0);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .menu-toggle {
     display: block;
     margin-left: auto;
