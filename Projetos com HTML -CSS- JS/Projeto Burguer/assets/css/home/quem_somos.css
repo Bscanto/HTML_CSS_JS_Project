@@ -1,0 +1,184 @@
+.fundo-interna {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 120px 15px 80px;
+  background: url('../../images/capa_hamburguer.png') no-repeat center bottom;
+  background-size: cover;
+  background-position: center 60%;
+  justify-content: center;
+  text-align: center;
+}
+
+.fundo-interna::before {
+  content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.fundo-interna h2 {
+  position: relative;
+  display: block;
+  font-family: 'calistoga';
+  font-size: 72px;
+  text-align: center;
+  color: #fff;
+}
+
+.fundo-interna .bread  {
+  position: relative;
+  margin: 10px 0 0;
+  color: #ffc765;
+  padding: 12px;
+  border: 0;
+  border-radius: 0;
+  font-size: 25px;
+  font-family: 'ariel';
+}
+
+ .fundo-interna nav a {
+  cursor: pointer;
+  color: #fff;
+}
+
+.fundo-interna .bread a:after {
+  content: '/';
+  margin-left: 5px;
+  margin-right: 3px;
+  pointer-events: none;
+  color: #fff;
+}
+
+.fundo-interna .bread a:hover {
+  color: var(--cor-p4);
+}
+
+
+main {
+  padding: 80px 0 ;
+  display: block;
+  background: var(--cor-0);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--cor-18);
+  
+}
+
+
+
+
+/*SOBRE */
+.interna-imagem {
+  position: relative;
+}
+
+
+
+.interna-imagem img {
+  display: block;
+  width: 550px;
+  height: 550px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+.interna-texto {
+  display: block;
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  justify-self: start;
+}
+
+.titulo-somos {
+  position: relative;
+  font-size: 40px;
+  font-family: 'calistoga';
+  text-transform: uppercase;
+  color: var(--cor-p4);
+  font-weight: normal;
+}
+
+.titulo-somos small {
+  font-family: 'ariel';
+  color: var(--cor-12);
+  font-size: 30px;
+  display: block;
+}
+
+.interna-texto p {
+  max-width: 100%; 
+  color: var(--cor-12);
+  line-height:32px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+
+@media (max-width: 1000px) {
+  .interna-imagem img {
+    width: 400px;
+    height: 400px;
+  }
+  
+}
+
+@media (max-width: 900px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .interna-imagem img {
+   margin: auto;
+   margin-bottom: 50px;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  .fundo-interna h2 {
+    font-size: 48px;
+  }
+  .interna-texto p{
+    max-width: 450px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  
+  .interna-texto {
+    max-width: 90%;
+  }
+
+  .interna-texto p {
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .interna-imagem img {
+    width: 80%;
+   margin: auto;
+   margin-bottom: 50px;
+  }
+  
+}

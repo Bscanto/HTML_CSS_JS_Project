@@ -78,3 +78,28 @@ document.querySelectorAll('.nav-tabs a').forEach(item => {
     item.parentElement.classList.add('active');
   });
 });
+
+
+
+
+
+//ABAS DO MENU 
+// Seleciona os elementos das abas e os conteúdos
+const tabs = document.querySelectorAll('.nav-tabs li a');
+const tabContents = document.querySelectorAll('.products-grid');
+
+// Adiciona evento de clique em cada aba
+tabs.forEach(tab => {
+  tab.addEventListener('click', event => {
+    event.preventDefault();
+
+    // Remove a classe "active" de todas as abas e conteúdos
+    tabs.forEach(tab => tab.parentElement.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+
+    // Adiciona a classe "active" na aba e no conteúdo correspondente
+    tab.parentElement.classList.add('active');
+    const targetId = tab.getAttribute('href').replace('#', '');
+    document.getElementById(targetId).classList.add('active');
+  });
+});
