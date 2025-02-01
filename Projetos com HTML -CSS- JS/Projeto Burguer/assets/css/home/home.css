@@ -421,6 +421,83 @@
   color: var(--cor-p4);
 }
 
+/* Modal Overlay */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+  z-index: 10000;
+  color: #000;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+.add-to-cart {
+  background: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background: #cc5200;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.ingredients-list li {
+  margin: 8px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.ingredients-list li::before {
+  content: "✔️";
+  margin-right: 10px;
+  color: #ff6600;
+}
+
+
+
 @media (max-width: 820px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -432,3 +509,9 @@
       grid-template-columns: 1fr;
   }
 }
+
+
+
+
+
+

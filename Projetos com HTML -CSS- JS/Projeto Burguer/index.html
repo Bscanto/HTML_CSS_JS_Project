@@ -26,8 +26,9 @@
       <nav aria-label="primaria">
         <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
         <ul class="header-menu">
-          <li><a href="./quem_somos.html"><img src="./assets/images/quem somos.png" alt=""> Quem Somos</a></li>
+
           <li><a href="#cardapio"><img src="./assets/images/burguer.png" alt="" /> Cardápio</a></li>
+          <li><a href="./quem_somos.html"><img src="./assets/images/quem somos.png" alt=""> Quem Somos</a></li>
           <li><a href="#contato"><img src="./assets/images/contato.png" alt=""> Contato</a></li>
           <a href="#" class="button">Fazer pedido</a>
         </ul>
@@ -94,56 +95,401 @@
 
       </div>
       <div id="burgers" class="products-grid tab-pane active">
-        <a href="" class="product-grid">
+        <!-- Hambúrguer 1 - Texas Burger -->
+        <a href="#" class="product-grid" onclick="openModal('modal1')">
           <div class="warning">Promoção</div>
           <div class="photo">
-            <img src="./assets/images/burgers/burger1.png" alt="" />
+            <img src="./assets/images/burgers/burger1.png" alt="Texas Burger" />
           </div>
           <div class="info">
             <div class="product-name">Texas Burger</div>
             <div class="product-price">R$25,50</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+        <!-- Modal - Texas Burger -->
+        <div id="modal1" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Texas Burger</h2>
+            <ul class="ingredients-list">
+              <li>🌟 Carne 100% bovina suculenta, grelhada ao ponto perfeito para realçar seu sabor natural.</li>
+              <li>🧀 Queijo cheddar artesanal cremoso, cuidadosamente derretido para uma textura irresistível.</li>
+              <li>🥓 Bacon defumado naturalmente, com fatias crocantes que elevam cada mordida.</li>
+              <li>🔥 Molho barbecue feito à mão, com um toque especial de especiarias.</li>
+              <li>🍞 Pão de brioche macio e dourado, assado diariamente para máxima frescura.</li>
+            </ul>
+            <p>Preço: R$25,50</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+        <!-- Hambúrguer 2 - BBQ Bacon -->
+        <a href="#" class="product-grid" onclick="openModal('modal2')">
           <div class="photo">
-            <img src="./assets/images/burgers/burger2.png" alt="" />
+            <img src="./assets/images/burgers/burger2.png" alt="BBQ Bacon" />
           </div>
           <div class="info">
-            <div class="product-name">Texas Burger</div>
+            <div class="product-name">BBQ Bacon</div>
+            <div class="product-price">R$27,00</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+        <!-- Modal - BBQ Bacon -->
+        <div id="modal2" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>BBQ Burger</h2>
+            <ul class="ingredients-list">
+              <li>🥓 Carne suculenta com queijo cheddar derretido, criando a combinação perfeita de sabor e cremosidade.</li>
+              <li>🔥 Bacon crocante e defumado, proporcionando uma textura irresistível e um toque defumado.</li>
+              <li>🍔 Cebolas caramelizadas, trazendo um contraste de doçura e profundidade ao sabor.</li>
+              <li>🌶️ Molho barbecue picante, feito artesanalmente com especiarias que acrescentam um sabor único e intenso.</li>
+              <li>🍞 Pão de hambúrguer artesanal, macio e leve, ideal para complementar todos os ingredientes.</li>
+            </ul>
+            <p>Preço: R$27,00</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+        <!-- Hambúrguer 3 - Melted Cheese -->
+        <a href="#" class="product-grid" onclick="openModal('modal3')">
           <div class="photo">
-            <img src="./assets/images/burgers/burger3.png" alt="" />
+            <img src="./assets/images/burgers/burger3.png" alt="Melted Cheese" />
           </div>
           <div class="info">
-            <div class="product-name">Texas Burger</div>
+            <div class="product-name">Melted Cheese</div>
+            <div class="product-price">R$22,00</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+
+        <!-- Modal - Melted Cheese -->
+        <div id="modal3" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Melted Cheese</h2>
+            <ul class="ingredients-list">
+              <li>🧀 Carne 100% bovina com queijo cheddar derretido, criando uma camada cremosa e cheia de sabor.</li>
+              <li>🍔 Cebolas grelhadas no ponto ideal, adicionando um toque doce e caramelizado.</li>
+              <li>🔥 Molho especial, feito com ingredientes frescos e temperos secretos, que dá um sabor único ao hambúrguer.</li>
+              <li>🍞 Pão macio de brioche, levemente dourado, que complementa perfeitamente a textura dos ingredientes.</li>
+            </ul>
+            <p>Preço: R$22,00</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+        <!-- Hambúrguer 4 - Vegan Delight -->
+        <a href="#" class="product-grid" onclick="openModal('modal4')">
           <div class="photo">
-            <img src="./assets/images/burgers/burger4.png" alt="" />
+            <img src="./assets/images/burgers/burger4.png" alt="Vegan Delight" />
           </div>
           <div class="info">
-            <div class="product-name">Texas Burger</div>
+            <div class="product-name">Vegan Delight</div>
+            <div class="product-price">R$23,50</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+
+        <!-- Modal - Vegan Delight -->
+        <div id="modal4" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Vegan Delight</h2>
+            <ul class="ingredients-list">
+              <li>🌱 Hambúrguer vegano de grão-de-bico, preparado com especiarias e ervas frescas para um sabor delicioso e autêntico.</li>
+              <li>🍅 Tomate fresco e crocante, trazendo um toque suculento e refrescante ao hambúrguer.</li>
+              <li>🥒 Pepino fatiado, que adiciona uma textura crocante e um sabor refrescante que equilibra os ingredientes.</li>
+              <li>🥬 Alface fresca e crocante, proporcionando um contraste perfeito com a suavidade do hambúrguer vegano.</li>
+              <li>🥖 Pão integral, macio e nutritivo, ideal para complementar os sabores frescos e naturais dos ingredientes.</li>
+              <li>🌱 Molho de tahine, suave e cremoso, com um toque de limão que realça a frescura dos vegetais.</li>
+            </ul>
+            <p>Preço: R$23,50</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+        <!-- Hambúrguer 5 - Classic Burger -->
+        <a href="#" class="product-grid" onclick="openModal('modal5')">
           <div class="photo">
-            <img src="./assets/images/burgers/burger1.png" alt="" />
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
           </div>
           <div class="info">
-            <div class="product-name">Texas Burger</div>
+            <div class="product-name">Classic Burger</div>
+            <div class="product-price">R$20,00</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+
+        <!-- Modal - Classic Burger -->
+        <div id="modal5" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Classic Burger</h2>
+            <ul class="ingredients-list">
+              <li>🍔 Carne 100% bovina, suculenta e grelhada ao ponto ideal para trazer o sabor clássico e irresistível.</li>
+              <li>🧀 Queijo prato derretido, criando uma camada cremosa e deliciosa sobre a carne.</li>
+              <li>🥒 Picles crocantes, que adicionam um toque agridoce perfeito para equilibrar os sabores.</li>
+              <li>🍞 Pão de hambúrguer macio e levemente tostado, proporcionando a base perfeita para todos os ingredientes.</li>
+              <li>🌿 Alface crocante, trazendo frescor e textura para complementar o sabor da carne e queijo.</li>
+              <li>🔥 Molho especial, cremoso e levemente picante, que dá o toque final de sabor ao hambúrguer.</li>
+            </ul>
+            <p>Preço: R$20,00</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+        <!-- Hambúrguer 6 - Spicy Jalapeño Burger -->
+        <a href="#" class="product-grid" onclick="openModal('modal6')">
           <div class="photo">
-            <img src="./assets/images/burgers/burger2.png" alt="" />
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
           </div>
           <div class="info">
-            <div class="product-name">Texas Burger</div>
+            <div class="product-name">Spicy Jalapeño</div>
+            <div class="product-price">R$24,00</div>
           </div>
         </a>
+
+        <div id="modal6" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Spicy Jalapeño Burger</h2>
+            <ul class="ingredients-list">
+              <li>🌶️ Carne 100% bovina, suculenta e temperada para realçar o sabor intenso do jalapeño.</li>
+              <li>🧀 Queijo pepper jack derretido, com um toque picante e cremoso que combina perfeitamente com os ingredientes.</li>
+              <li>🥒 Jalapeños frescos, fatiados, para um sabor picante e refrescante.</li>
+              <li>🍞 Pão de hambúrguer artesanal, levemente tostado, para dar um contraste de textura.</li>
+              <li>🔥 Molho picante e cremoso, que intensifica o sabor do jalapeño e adiciona uma explosão de calor.</li>
+            </ul>
+            <p>Preço: R$24,00</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+        <!-- Hambúrguer 7 - BBQ Chicken Burger -->
+        <a href="#" class="product-grid" onclick="openModal('modal7')">
+          <div class="photo">
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
+          </div>
+          <div class="info">
+            <div class="product-name">BBQ Chicken</div>
+            <div class="product-price">R$27,50</div>
+          </div>
+        </a>
+
+        <div id="modal7" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>BBQ Chicken Burger</h2>
+            <ul class="ingredients-list">
+              <li>🍗 Peito de frango grelhado, suculento e marinado no molho barbecue.</li>
+              <li>🧀 Queijo cheddar derretido, para adicionar um toque cremoso que complementa o frango e o molho barbecue.</li>
+              <li>🍞 Pão de hambúrguer macio, levemente tostado para complementar a textura do frango.</li>
+              <li>🌿 Alface fresca, trazendo crocância e frescor ao hambúrguer.</li>
+              <li>🔥 Molho barbecue doce e picante, para realçar o sabor do frango grelhado e dar um toque defumado.</li>
+            </ul>
+            <p>Preço: R$27,50</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+
+        <!-- Hambúrguer 8 - Cheddar Bacon Burger -->
+        <a href="#" class="product-grid" onclick="openModal('modal8')">
+          <div class="photo">
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
+          </div>
+          <div class="info">
+            <div class="product-name">Cheddar Bacon</div>
+            <div class="product-price">R$28,00</div>
+          </div>
+        </a>
+
+        <div id="modal8" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Cheddar Bacon Burger</h2>
+            <ul class="ingredients-list">
+              <li>🍔 Carne 100% bovina, grelhada ao ponto perfeito para manter a suculência.</li>
+              <li>🧀 Queijo cheddar cremoso, derretido para dar uma camada extra de sabor.</li>
+              <li>🥓 Bacon crocante, defumado e com sabor irresistível, que complementa a carne perfeitamente.</li>
+              <li>🍞 Pão de hambúrguer de alta qualidade, que ajuda a manter todos os ingredientes juntos.</li>
+              <li>🌱 Molho especial, levemente picante, para adicionar uma explosão de sabor ao hambúrguer.</li>
+            </ul>
+            <p>Preço: R$28,00</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+        <!-- Hambúrguer 9 - Hawaiian Burger -->
+        <a href="#" class="product-grid" onclick="openModal('modal9')">
+          <div class="photo">
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
+          </div>
+          <div class="info">
+            <div class="product-name">Hawaiian Burger</div>
+            <div class="product-price">R$29,00</div>
+          </div>
+        </a>
+
+        <div id="modal9" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Hawaiian Burger</h2>
+            <ul class="ingredients-list">
+              <li>🍍 Carne 100% bovina, grelhada, com uma fatia suculenta de abacaxi caramelizado por cima.</li>
+              <li>🧀 Queijo suíço derretido, adicionando uma camada suave e cremosa ao hambúrguer.</li>
+              <li>🥓 Bacon crocante, que adiciona um toque salgado ao sabor adocicado do abacaxi.</li>
+              <li>🍞 Pão de hambúrguer macio, perfeito para suportar os sabores tropicais e suculentos.</li>
+              <li>🔥 Molho teriyaki, doce e salgado, para completar o hambúrguer com um toque exótico.</li>
+            </ul>
+            <p>Preço: R$29,00</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+        <!-- Hambúrguer 10 - Mushroom Swiss-->
+        <a href="#" class="product-grid" onclick="openModal('modal10')">
+          <div class="photo">
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
+          </div>
+          <div class="info">
+            <div class="product-name">Mushroom Swiss</div>
+            <div class="product-price">R$24,00</div>
+          </div>
+        </a>
+
+        <div id="modal10" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Mushroom Swiss Burger</h2>
+            <ul class="ingredients-list">
+              <li>🌶️ Carne 100% bovina, suculenta e temperada para realçar o sabor intenso do jalapeño.</li>
+              <li>🧀 Queijo pepper jack derretido, com um toque picante e cremoso que combina perfeitamente com os ingredientes.</li>
+              <li>🥒 Jalapeños frescos, fatiados, para um sabor picante e refrescante.</li>
+              <li>🍞 Pão de hambúrguer artesanal, levemente tostado, para dar um contraste de textura.</li>
+              <li>🔥 Molho picante e cremoso, que intensifica o sabor do jalapeño e adiciona uma explosão de calor.</li>
+            </ul>
+            <p>Preço: R$24,00</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+        <!-- Hambúrguer 11 - Crispy Chicken -->
+        <a href="#" class="product-grid" onclick="openModal('modal11')">
+          <div class="photo">
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
+          </div>
+          <div class="info">
+            <div class="product-name">Crispy Chicken </div>
+            <div class="product-price">R$26,50</div>
+          </div>
+        </a>
+
+        <div id="modal11" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Crispy Chicken Burger</h2>
+            <ul class="ingredients-list">
+              <li>🍗 Peito de frango empanado e frito até ficar crocante, trazendo uma textura irresistível.</li>
+              <li>🧀 Queijo cheddar derretido, adicionando uma camada cremosa que combina perfeitamente com o frango crocante.</li>
+              <li>🥒 Picles crocantes, com um toque de acidez para equilibrar os sabores.</li>
+              <li>🍞 Pão de hambúrguer macio, levemente tostado, que combina bem com a crocância do frango.</li>
+              <li>🌱 Molho especial de maionese temperada, que dá um toque suave e cremoso ao hambúrguer.</li>
+            </ul>
+            <p>Preço: R$26,50</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+        <!-- Hambúrguer 12 - Avocado Burger -->
+        <a href="#" class="product-grid" onclick="openModal('modal12')">
+          <div class="photo">
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
+          </div>
+          <div class="info">
+            <div class="product-name">Avocado Burger </div>
+            <div class="product-price">R$28,80</div>
+          </div>
+        </a>
+
+        <div id="modal12" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Avocado Burger</h2>
+            <ul class="ingredients-list">
+              <li>🥑 Fatias de abacate fresco, trazendo cremosidade e um sabor suave ao hambúrguer.</li>
+              <li>🍔 Carne 100% bovina, grelhada ao ponto perfeito para realçar o sabor do abacate.</li>
+              <li>🧀 Queijo cheddar derretido, criando uma camada cremosa que complementa os sabores frescos do abacate.</li>
+              <li>🍞 Pão de hambúrguer macio e tostado, perfeito para manter os ingredientes frescos no lugar.</li>
+              <li>🌶️ Molho de pimenta suave, que adiciona um toque de calor sem dominar os outros sabores.</li>
+            </ul>
+            <p>Preço: R$28,00</p>
+            <button class="add-to-cart"><a href="#">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+        <!-- Hambúrguer 13 - Buffalo Chicken -->
+        <a href="#" class="product-grid" onclick="openModal('modal13')">
+          <div class="photo">
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
+          </div>
+          <div class="info">
+            <div class="product-name">Buffalo Chicken</div>
+            <div class="product-price">R$30,00</div>
+          </div>
+        </a>
+
+        <div id="modal13" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Buffalo Chicken Burger</h2>
+            <ul class="ingredients-list">
+              <li>🍗 Peito de frango empanado e frito, coberto com molho buffalo picante e cremoso.</li>
+              <li>🧀 Queijo azul cremoso, que combina perfeitamente com o sabor picante do molho buffalo.</li>
+              <li>🍞 Pão de hambúrguer brioche, macio e levemente doce, que equilibra os sabores intensos do frango e molho.</li>
+              <li>🌱 Alface crocante, trazendo frescor e textura ao hambúrguer.</li>
+              <li>🌶️ Molho buffalo extra picante, para os amantes de um toque bem quente.</li>
+            </ul>
+            <p>Preço: R$30,00</p>
+            <button class="add-to-cart"><a href="#">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+        <!-- Hambúrguer 14 - Seafood Burger -->
+        <a href="#" class="product-grid" onclick="openModal('modal14')">
+          <div class="photo">
+            <img src="./assets/images/burgers/burger1.png" alt="Classic Burger" />
+          </div>
+          <div class="info">
+            <div class="product-name">Seafood Burger</div>
+            <div class="product-price">R$35,00</div>
+          </div>
+        </a>
+
+        <div id="modal14" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Seafood Burger</h2>
+            <ul class="ingredients-list">
+              <li>🦞 Hambúrguer de frutos do mar, feito com camarões frescos e peixe branco, perfeitamente temperado.</li>
+              <li>🧀 Queijo cremoso, levemente temperado, para adicionar uma textura suave e saborosa ao hambúrguer.</li>
+              <li>🍞 Pão de hambúrguer brioche, macio e delicado, que complementa os sabores do mar.</li>
+              <li>🥒 Pepinos frescos e alface crocante, trazendo frescor e um contraste de texturas.</li>
+              <li>🍋 Molho de limão e ervas frescas, para adicionar um toque de frescor e acidez que equilibra o sabor do hambúrguer.</li>
+            </ul>
+            <p>Preço: R$35,00</p>
+            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+          </div>
+        </div>
+
+
+
+
       </div>
 
       <div id="bebidas" class="products-grid">
@@ -208,7 +554,7 @@
             <div class="product-name">Brownie com Sorvete</div>
           </div>
         </a>
-       
+
       </div>
 
       <div id="porcoes" class="products-grid">
@@ -245,7 +591,7 @@
             <div class="product-name">Palitos de Mussarela</div>
           </div>
         </a>
-        
+
       </div>
 
     </div>
@@ -281,7 +627,7 @@
     <div class="container p80" id="contato">
       <div class="rodape--list">
         <div class="rodape-list--divs">
-          <h3 class="rodape-list--title" >institucional</h3>
+          <h3 class="rodape-list--title">institucional</h3>
           <ul class="footer-menu">
             <li><a href="">Quem Somos</a></li>
             <li><a href="">Cardápio</a></li>
@@ -325,7 +671,7 @@
 
 
 
-
+ 
   <script src="./js/script.js"></script>
 </body>
 

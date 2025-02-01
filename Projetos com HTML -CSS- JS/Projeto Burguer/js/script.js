@@ -103,3 +103,26 @@ tabs.forEach(tab => {
     document.getElementById(targetId).classList.add('active');
   });
 });
+
+
+
+
+
+
+
+ // Função para abrir a modal
+ function openModal(modalId) {
+  document.getElementById(modalId).classList.remove('hidden');
+}
+
+// Função para fechar a modal
+function closeModal(modalId) {
+  document.getElementById(modalId).classList.add('hidden');
+}
+
+// Função para fechar a modal se clicar fora dela
+window.onclick = function(event) {
+  if (event.target.classList.contains('modal-overlay')) {
+    closeModal(event.target.id);
+  }
+}
