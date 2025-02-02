@@ -94,6 +94,7 @@
         </ul>
 
       </div>
+
       <div id="burgers" class="products-grid tab-pane active">
         <!-- Hambúrguer 1 - Texas Burger -->
         <a href="#" class="product-grid" onclick="openModal('modal1')">
@@ -119,7 +120,9 @@
               <li>🍞 Pão de brioche macio e dourado, assado diariamente para máxima frescura.</li>
             </ul>
             <p>Preço: R$25,50</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Texas Burger', price: 25.50})">
+              Adicionar ao Carrinho
+            </button>
           </div>
         </div>
 
@@ -146,7 +149,9 @@
               <li>🍞 Pão de hambúrguer artesanal, macio e leve, ideal para complementar todos os ingredientes.</li>
             </ul>
             <p>Preço: R$27,00</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'BBQ Bacon', price: 27.00})">
+              Adicionar ao Carrinho
+            </button>
           </div>
         </div>
 
@@ -174,7 +179,10 @@
               <li>🍞 Pão macio de brioche, levemente dourado, que complementa perfeitamente a textura dos ingredientes.</li>
             </ul>
             <p>Preço: R$22,00</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Melted Cheese', price: 22.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -204,7 +212,10 @@
               <li>🌱 Molho de tahine, suave e cremoso, com um toque de limão que realça a frescura dos vegetais.</li>
             </ul>
             <p>Preço: R$23,50</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Vegan Delight', price: 23.50})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -234,7 +245,10 @@
               <li>🔥 Molho especial, cremoso e levemente picante, que dá o toque final de sabor ao hambúrguer.</li>
             </ul>
             <p>Preço: R$20,00</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Classic Burger', price: 20.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -261,7 +275,10 @@
               <li>🔥 Molho picante e cremoso, que intensifica o sabor do jalapeño e adiciona uma explosão de calor.</li>
             </ul>
             <p>Preço: R$24,00</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Spicy Jalapeño', price: 24.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -289,7 +306,10 @@
               <li>🔥 Molho barbecue doce e picante, para realçar o sabor do frango grelhado e dar um toque defumado.</li>
             </ul>
             <p>Preço: R$27,50</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'BBQ Chicken', price: 27.50})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -318,7 +338,10 @@
               <li>🌱 Molho especial, levemente picante, para adicionar uma explosão de sabor ao hambúrguer.</li>
             </ul>
             <p>Preço: R$28,00</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Cheddar Bacon', price: 28.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -346,7 +369,10 @@
               <li>🔥 Molho teriyaki, doce e salgado, para completar o hambúrguer com um toque exótico.</li>
             </ul>
             <p>Preço: R$29,00</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Hawaiian Burger', price: 29.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -374,7 +400,10 @@
               <li>🔥 Molho picante e cremoso, que intensifica o sabor do jalapeño e adiciona uma explosão de calor.</li>
             </ul>
             <p>Preço: R$24,00</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Mushroom Swiss', price: 24.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -401,7 +430,10 @@
               <li>🌱 Molho especial de maionese temperada, que dá um toque suave e cremoso ao hambúrguer.</li>
             </ul>
             <p>Preço: R$26,50</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Crispy Chicken', price: 26.50})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -428,7 +460,10 @@
               <li>🌶️ Molho de pimenta suave, que adiciona um toque de calor sem dominar os outros sabores.</li>
             </ul>
             <p>Preço: R$28,00</p>
-            <button class="add-to-cart"><a href="#">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Avocado Burger', price: 28.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -456,7 +491,10 @@
               <li>🌶️ Molho buffalo extra picante, para os amantes de um toque bem quente.</li>
             </ul>
             <p>Preço: R$30,00</p>
-            <button class="add-to-cart"><a href="#">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Buffalo Burger', price: 30.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -483,7 +521,10 @@
               <li>🍋 Molho de limão e ervas frescas, para adicionar um toque de frescor e acidez que equilibra o sabor do hambúrguer.</li>
             </ul>
             <p>Preço: R$35,00</p>
-            <button class="add-to-cart"><a href="">Adicionar ao Carrinho</a></button>
+            <button class="add-to-cart" onclick="addToCart({name: 'Seafood Burger', price: 28.00})">
+              Adicionar ao Carrinho
+            </button>
+
           </div>
         </div>
 
@@ -493,16 +534,34 @@
       </div>
 
       <div id="bebidas" class="products-grid">
-        <a href="" class="product-grid">
+        <a href="#" class="product-grid" onclick="openModal('modal21')">
           <div class="warning">Promoção</div>
           <div class="photo">
-            <img src="./assets/images/bebidas/agua.jpg" alt="" />
+            <img src="./assets/images/bebidas/agua.jpg" alt="Água" />
           </div>
           <div class="info">
             <div class="product-name">Água</div>
+            <div class="product-price">R$4,00</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+
+        <!-- Modal - Água -->
+        <div id="modal21" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Água Mineral</h2>
+            <ul class="ingredients-list">
+              <li>💧 Água mineral pura e refrescante.</li>
+              <li>🌿 Sem gás, perfeita para acompanhar qualquer refeição.</li>
+            </ul>
+            <p>Preço: R$5,00</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Água Mineral', price: 5.00})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <a href="#" class="product-grid" onclick="openModal('modal22')">
           <div class="photo">
             <img src="./assets/images/bebidas/chopp.jpg" alt="" />
           </div>
@@ -510,7 +569,24 @@
             <div class="product-name">Chopp</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+
+        <!-- Modal - Chopp -->
+        <div id="modal22" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-chopp')">&times;</span>
+            <h2>Chopp Artesanal</h2>
+            <ul class="ingredients-list">
+              <li>🍺 Chopp fresco e artesanal, servido na temperatura ideal.</li>
+              <li>🌟 Sabor suave e equilibrado.</li>
+            </ul>
+            <p>Preço: R$12,00</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Chopp Artesanal', price: 12.00})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <a href="#" class="product-grid" onclick="openModal('modal23')">
           <div class="photo">
             <img src="./assets/images/bebidas/long.jpg" alt="" />
           </div>
@@ -518,7 +594,24 @@
             <div class="product-name">Cervejas</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+        <!-- Modal - Cerveja -->
+        <div id="modal23" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-cerveja')">&times;</span>
+            <h2>Cerveja Gelada</h2>
+            <ul class="ingredients-list">
+              <li>🍻 Cerveja premium, servida bem gelada.</li>
+              <li>🔥 Perfeita para acompanhar hambúrgueres.</li>
+            </ul>
+            <p>Preço: R$10,00</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Cerveja Gelada', price: 10.00})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+
+        <a href="#" class="product-grid" onclick="openModal('modal24')">
           <div class="photo">
             <img src="./assets/images/bebidas/refri.jpg" alt="" />
           </div>
@@ -526,7 +619,24 @@
             <div class="product-name">Refrigerante</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+        <!-- Modal - Refrigerante -->
+        <div id="modal24" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-refrigerante')">&times;</span>
+            <h2>Refrigerante</h2>
+            <ul class="ingredients-list">
+              <li>🥤 Refrigerante tradicional com sabor irresistível.</li>
+              <li>⚡ Gaseificado e refrescante.</li>
+            </ul>
+            <p>Preço: R$8,00</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Refrigerante', price: 8.00})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+
+        <a href="#" class="product-grid" onclick="openModal('modal25')">
           <div class="photo">
             <img src="./assets/images/bebidas/suco.jpg" alt="" />
           </div>
@@ -534,10 +644,27 @@
             <div class="product-name">Sucos</div>
           </div>
         </a>
+        <!-- Modal - Sucos -->
+        <div id="modal25" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-suco')">&times;</span>
+            <h2>Suco Natural</h2>
+            <ul class="ingredients-list">
+              <li>🍊 Sucos 100% naturais, preparados na hora.</li>
+              <li>🥭 Opções: Laranja, Manga, Abacaxi.</li>
+            </ul>
+            <p>Preço: R$10,00</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Suco Natural', price: 10.00})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+
       </div>
 
       <div id="sobremesas" class="products-grid">
-        <a href="" class="product-grid">
+        <a href="#" class="product-grid" onclick="openModal('modal31')">
           <div class="warning">Promoção</div>
           <div class="photo">
             <img src="./assets/images/sobremesas/milk-shakes.jpg" alt="" />
@@ -546,7 +673,38 @@
             <div class="product-name">Milk-Shakes</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+        <!-- Modal - Milk-Shakes -->
+        <div id="modal31" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="clwose-modal" onclick="closeModal('modal-milkshake')">&times;</span>
+            <h2>Milk-Shakes Especiais</h2>
+            <ul class="ingredients-list">
+              <li>🍫 Sabor Chocolate com cobertura cremosa.</li>
+              <li>🍓 Sabor Morango com frutas selecionadas.</li>
+              <li>🍦 Sabor Baunilha clássico, suave e delicioso.</li>
+              <br>
+              <label for="milkshake-flavor">Escolha o sabor:</label>
+              <br>
+              <div class="select-wrapper">
+                <select id="milkshake-flavor">
+                  <option value="Chocolate">Chocolate</option>
+                  <option value="Morango">Morango</option>
+                  <option value="Baunilha">Baunilha</option>
+                  <option value="Doce de Leite">Doce de Leite</option>
+                </select>
+              </div>
+
+            </ul>
+            <br>
+            <p>Preço: R$15,00</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Milk-Shake', price: 15.00})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+
+        <a href="#" class="product-grid" onclick="openModal('modal32')">
           <div class="photo">
             <img src="./assets/images//sobremesas/brownie-com-sorvete.jpg" alt="" />
           </div>
@@ -554,11 +712,56 @@
             <div class="product-name">Brownie com Sorvete</div>
           </div>
         </a>
+        <!-- Modal - Brownie com Sorvete -->
+        <div id="modal32" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-brownie')">&times;</span>
+            <h2>Brownie com Sorvete</h2>
+            <ul class="ingredients-list">
+              <li>🍫 Brownie de chocolate belga, macio e intenso.</li>
+              <li>🍦 Acompanhado de sorvete artesanal de baunilha.</li>
+              <li>✨ Cobertura de calda quente de chocolate.</li>
+            </ul>
+            <br>
+            <div class="select-wrapper">
+              <label for="milkshake-flavor">Escolha o sabor:</label>
+              <select id="milkshake-flavor">
+                <option value="Chocolate">Chocolate</option>
+                <option value="Morango">Morango</option>
+                <option value="Baunilha">Baunilha</option>
+                <option value="Doce de Leite">Doce de Leite</option>
+              </select>
+            </div>
+            <br>
+
+            <p>Preço: R$20,00</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Brownie com Sorvete', price: 20.00})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal - Brownie com Sorvete -->
+        <div id="modal32" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-brownie')">&times;</span>
+            <h2>Brownie com Sorvete</h2>
+            <ul class="ingredients-list">
+              <li>🍫 Brownie de chocolate belga, macio e intenso.</li>
+              <li>🍦 Acompanhado de sorvete artesanal de baunilha.</li>
+              <li>✨ Cobertura de calda quente de chocolate.</li>
+            </ul>
+            <p>Preço: R$20,00</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Brownie com Sorvete', price: 20.00})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
 
       </div>
 
       <div id="porcoes" class="products-grid">
-        <a href="" class="product-grid">
+        <a href="#" class="product-grid" onclick="openModal('modal41')">
           <div class="warning">Promoção</div>
           <div class="photo">
             <img src="./assets/images/porcoes/aneis-de-cebola.jpg" alt="" />
@@ -567,7 +770,22 @@
             <div class="product-name">Anéis de Cebola</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+        <!-- Modal - Anéis de Cebola -->
+        <div id="modal41" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Anéis de Cebola</h2>
+            <p>Porção crocante de anéis de cebola empanados, acompanhada de molho especial.</p>
+            <br>
+            <br>
+            <p>Preço: R$15,90</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Anéis de Cebola', price: 15.90})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <a href="#" class="product-grid" onclick="openModal('modal42')">
           <div class="photo">
             <img src="./assets/images/porcoes/batata-rustica.jpg" alt="" />
           </div>
@@ -575,7 +793,24 @@
             <div class="product-name">Batata Rústica</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+
+        <!-- Modal - Batata Rústica -->
+        <div id="modal42" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Batata Rústica</h2>
+            <p>Batatas rústicas temperadas com ervas especiais e acompanhadas de molho artesanal.</p>
+            <br>
+            <br>
+            <p>Preço: R$18,50</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Batata Rústica', price: 18.50})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+
+        <a href="#" class="product-grid" onclick="openModal('modal43')">
           <div class="photo">
             <img src="./assets/images/porcoes/fritas-com-molho-de-queijo-e-bacon.jpg" alt="" />
           </div>
@@ -583,7 +818,24 @@
             <div class="product-name">Fritas Queijo e bacon</div>
           </div>
         </a>
-        <a href="" class="product-grid">
+        <!-- Modal - Fritas Queijo e Bacon -->
+        <div id="modal43" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Fritas com Molho de Queijo e Bacon</h2>
+            <p>Porção generosa de batatas fritas cobertas com molho cremoso de queijo e bacon crocante.</p>
+            
+            <br>
+            <br>
+            <p>Preço: R$22,90</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Fritas Queijo e Bacon', price: 22.90})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+
+
+        <a href="#" class="product-grid" onclick="openModal('modal44')">
           <div class="photo">
             <img src="./assets/images/porcoes/palitos-de-mucarela.jpg" alt="" />
           </div>
@@ -591,21 +843,44 @@
             <div class="product-name">Palitos de Mussarela</div>
           </div>
         </a>
+        <!-- Modal - Palitos de Mussarela -->
+        <div id="modal44" class="modal-overlay hidden">
+          <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2>Palitos de Mussarela</h2>
+            <p>Palitos crocantes de mussarela empanada, servidos com molho especial.</p>
+            <br>
+            <br>
+            <p>Preço: R$19,90</p>
+            <button class="add-to-cart" onclick="addToCart({name: 'Palitos de Mussarela', price: 19.90})">
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
 
       </div>
 
     </div>
+
+
+    <!-- Carrinho -->
+    <!-- Carrinho -->
+    <div id="cart" class="cart-container">
+      <h2>Carrinho de Compras</h2>
+      <div id="cart-items" class="cart-items">
+        <!-- Os itens adicionados ao carrinho serão listados aqui -->
+      </div>
+      <div class="cart-summary">
+        <p>Total: R$<span id="cart-total">0,00</span></p>
+        <br>
+        <label for="order-notes" class="notes-label">Observações:</label>
+        <textarea id="order-notes" rows="3" placeholder="Escreva aqui suas observações..."></textarea>
+        <br>
+        <button id="checkout-button">Finalizar Compra</button>
+      </div>
+    </div>
+
   </main>
-
-
-
-
-
-
-
-
-
-
 
 
   <!--Novidades e enviar email-->
@@ -671,7 +946,7 @@
 
 
 
- 
+
   <script src="./js/script.js"></script>
 </body>
 

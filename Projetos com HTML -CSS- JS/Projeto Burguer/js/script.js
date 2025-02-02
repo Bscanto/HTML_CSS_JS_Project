@@ -65,6 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
 //Active do icone do menu cardapio
  // Remove a classe active de todos os itens
  document.querySelectorAll('.nav-tabs li').forEach(li => li.classList.remove('active'));
@@ -126,3 +130,67 @@ window.onclick = function(event) {
     closeModal(event.target.id);
   }
 }
+
+
+
+
+let cart = [];  // Array para armazenar os itens do carrinho
+const cartTotalElement = document.getElementById("cart-total");  // Elemento para mostrar o total
+const cartContainer = document.getElementById("cart");  // Container do carrinho
+const checkoutButton = document.getElementById("checkout-button");  // Botão de finalizar compra
+
+// Função para adicionar item ao carrinho
+function addToCart(item) {
+  cart.push(item);  // Adiciona o item ao carrinho
+  updateCart();  // Atualiza a exibição do carrinho
+
+  if (cart.length === 1) {
+    cartContainer.style.display = 'block';  // Exibe o carrinho quando o primeiro item for adicionado
+  }
+}
+
+// Função para atualizar a exibição do carrinho
+function updateCart() {
+  const cartItemsElement = document.getElementById("cart-items");
+  cartItemsElement.innerHTML = '';  // Limpa os itens exibidos
+
+  let total = 0;  // Variável para calcular o total do carrinho
+
+  // Para cada item no carrinho, exiba as informações
+  cart.forEach(item => {
+    const itemElement = document.createElement("div");
+    itemElement.classList.add("cart-item");
+
+    itemElement.innerHTML = `
+      <p>${item.name} - R$${item.price}</p>
+      <button onclick="removeFromCart('${item.name}')">Remover</button>
+    `;
+
+    cartItemsElement.appendChild(itemElement);
+    total += item.price;  // Soma o preço do item ao total
+  });
+
+  cartTotalElement.textContent = total.toFixed(2);  // Atualiza o total do carrinho
+}
+
+// Função para remover item do carrinho
+function removeFromCart(itemName) {
+  cart = cart.filter(item => item.name !== itemName);  // Remove o item pelo nome
+  updateCart();  // Atualiza a exibição do carrinho
+
+  if (cart.length === 0) {
+    cartContainer.style.display = 'none';  // Esconde o carrinho se não houver itens
+  }
+}
+
+// Função para finalizar a compra e zerar o carrinho
+checkoutButton.addEventListener("click", function() {
+  if (cart.length > 0) {
+    alert("Obrigado pelo seu pedido! Seu carrinho foi finalizado.");  // Exibe mensagem de sucesso
+    cart = [];  // Limpa o carrinho
+    updateCart();  // Atualiza a exibição do carrinho
+    cartContainer.style.display = 'none';  // Esconde o carrinho
+  } else {
+    alert("Seu carrinho está vazio.");
+  }
+});
