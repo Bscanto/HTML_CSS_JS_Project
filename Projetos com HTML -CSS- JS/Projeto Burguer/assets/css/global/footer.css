@@ -246,6 +246,7 @@ footer {
 
 }
 
+
 @media (max-width: 480px) {
   .rodape--list--devs h3 {
     font-size: 4px;
@@ -287,6 +288,7 @@ footer {
 .footer-end p > a:hover {
   color: var(--cor-p4);
 }
+
 
 
 @media (max-width: 768px) {
