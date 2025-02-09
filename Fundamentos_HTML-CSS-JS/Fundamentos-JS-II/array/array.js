@@ -29,6 +29,8 @@ console.log(arr); // ["Frodo", "Sam", "Merry", "Pippin", "Gandalf", "Aragorn", "
 
 
 
+
+
 //ADICIONANDO ELEMENTOS
 // push: Adiciona um elemento ao final do array
 let tamanho = arr.push("Boromir");
