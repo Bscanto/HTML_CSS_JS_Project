@@ -15,6 +15,7 @@ console.log(arr[1][0])
 console.log(arr[1][1])
 console.log(arr[2])
 console.log(arr[2][1])
+console.log(arr[2][1][1])// OI, MUNDO!
 
 
 
@@ -25,6 +26,13 @@ const matriz = [
   ["l3, c1", "l3, c2", "l3, c3", "l3, c4"],
 ]
 console.table(matriz)
+
+console.log("matriz com nova linha no final da array")
+matriz.push(["Nova Linha"])
+matriz[0].push(["Nova Coluna"])
+
+console.table(matriz)
+
 
 
 // Podemos usar vários níveis de laços FOR para iterar facilmente pela matriz
