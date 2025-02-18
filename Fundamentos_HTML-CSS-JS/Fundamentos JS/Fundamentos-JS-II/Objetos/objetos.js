@@ -8,9 +8,46 @@
 // Uma propriedade também pode ser string, números e boleanos como chave
 // uma propriedade pode armazenar qualquer tipo de dado como valor
 // Pode ser criado através dfe chaves {} 
-let objeto = {}
+let obj = {}
 // Suas propriedades e funções podem ser referenciadas por encadeamento com ponto "." ou []
     //objeto.prop = "Olá Mundo!"
     //objeto.executar()
 
-    
+
+let nome = "prop";
+console.log(nome);
+
+let objeto = { };
+console.log(objeto);
+
+objeto.prop = "ola, Mundo!";
+console.log(objeto);
+
+console.log(objeto.prop);
+console.log(objeto[nome]);
+console.log(objeto.prop === objeto["prop"]);
+console.log(objeto.prop === objeto["pro" + "p"]);
+console.log(objeto.prop === objeto[nome]);
+
+
+let funcao = "log";
+console.log(funcao);
+
+console[funcao]("Olá, Mundo!");
+
+const pessoa ={};
+console.log(pessoa);
+
+pessoa.nome = "Bruno";
+pessoa.idade = 38;
+
+console.log(pessoa);
+
+pessoa.colegas = ["Lucas", "Juliana", "Rafael"];
+pessoa.endereco = {
+  rua:"Logo Ali",
+  numero: 42,
+  bairro: "centro"
+}
+
+console.log(pessoa);
