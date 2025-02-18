@@ -49,7 +49,7 @@ ingredient.shift();
 console.log('Total ingredients: ' + ingredient.length);
 console.log( ingredient);
 
-
+//EXERCICIOS
 let carros = ['BMW', 'Ferrari', 'Mercedes'];
 console.log(carros);
 let x = 1;
@@ -59,6 +59,8 @@ carros[1]= 'Audi';
 console.log(carros);
 
 carros.push('Volvo');
+console.log("Lista com VOlvo");
 console.log(carros);
 
+console.log("Quantidde de itens na lista");
 console.log(carros.length);
