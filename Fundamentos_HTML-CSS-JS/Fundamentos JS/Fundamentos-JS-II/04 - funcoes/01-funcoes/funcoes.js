@@ -26,10 +26,10 @@ function dobro(x){
 }
 // Se uma função for chamada sem informar o parâmetro
 // o valor usado para ele será o undefined
-dobro()
+//dobro()
 
-dobro(5);
-dobro(7);
+//dobro(5);
+//dobro(7);
 
 // Valor padrão para os parâmetros
 // Mas podemos declarar um valor padrão para um parãmetro, assim, 
@@ -51,11 +51,15 @@ soma(34, 5)
 // A ordem dos parâmetros é importante
 // Ao usar vários parâmetros, é recomendado deixar aqueles com valor padrão por último
 function criarUsuario(nome, email, senha, tipo = "leitor") {
-  const usuario = { nome, email, senha, tipo }
+  const usuario = { 
+    nome, // mesma coisa que nome: nome
+    email, 
+    senha, 
+    tipo }
   console.log(usuario)
 }
 
-function novoUsuario(nome, tipo = "leitor", email, senha) {
+function novoUsuario(nome, email, senha, tipo = "Admin") {
   const usuario = { nome, email, senha, tipo }
   console.log(usuario)
 }
@@ -71,16 +75,18 @@ function parametrosDoJeitoErrado(nome, telefone, endereco, aniversario, email, s
   // ...
 }
 function parametrosDoJeitoCerto(usuario) {
-  // ...
+ //...
 }
 // Além de facilitar na chamada da função, a ordem dos parâmetros se torna irrelevante
 parametrosDoJeitoErrado("nome", "telefone", "endereco", "aniversario", "email", "senha")
-const dadosDoUsuario = {
-  nome: "",
-  telefone: "",
-  email: "",
-  senha: "",
-  aniversario: "",
-  endereco: ""
+const usuario = {
+  nome: "a",
+  telefone: "a",
+  email: "a",
+  senha: "a",
+  endereco: "a",
+  aniversario: "a"
 }
-parametrosDoJeitoCerto(dadosDoUsuario)
+
+parametrosDoJeitoCerto(usuario);
+
