@@ -9,3 +9,19 @@ function somar(a, b) {
 // porque ao fazer isso estaríamos executando a função
 const operacao = somar
 console.log(operacao(4, 5))
+
+
+
+
+// Função anônima atribuída a uma variável
+const soma = function(a, b) {
+  return a + b;
+};
+
+// Usando a função anônima
+console.log(soma(4, 5)); // Output: 9
+
+// Função anônima como callback
+setTimeout(function() {
+  console.log('Executado após 1 segundo');
+}, 5000);
