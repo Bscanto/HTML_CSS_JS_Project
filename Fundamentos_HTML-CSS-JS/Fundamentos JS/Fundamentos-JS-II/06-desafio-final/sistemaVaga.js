@@ -117,7 +117,20 @@ if( confirmacao) {
 // Função visualizar uma vaga
 //A opção de visualizar uma vaga deve pedir o índice da vaga e mostrar todas as informações dela: índice, nome, descrição, data limite, quantidade de candidatos e o nome dos candidatos.
 function exibirVaga() {
+  const indice = prompt("Informe o índice da vaga que deseja exibir:")
+  const vaga = vagas[indice]
 
+  const candidatosEmTexto = vaga.candidatos.reduce((textoFinal, candidato) => textoFinal + "\n - " + candidato, "")
+  // const candidatosEmTexto = vaga.candidatos.map(candidato => "\n - " + candidato).join(""); 
+
+  alert(
+    "Vaga nº " + indice +
+    "\nNome: " + vaga.nome +
+    "\nDescrição: " + vaga.descricao +
+    "\nData limite: " + vaga.dataLimite +
+    "\nQuantidade de candidatos: " + vaga.candidatos.length +
+    "\nCandidatos inscritos:" + candidatosEmTexto
+  )
 }
 
 
@@ -125,7 +138,19 @@ function exibirVaga() {
 // Função Inscrever um candidato
 //A opção de inscrever um candidato em uma vaga de pedir o nome do candidato, o índice da vaga e então uma confirmação exibindo as informações da vaga antes de salvar o candidato na vaga.
 function inscreverCandidato() {
+ const candidato = prompt("Informe o nome do(a) candidato(a):")
+  const indice = prompt("Informe o índice da vaga para a qual o(a) candidato(a) deseja se inscrever:")
+  const vaga = vagas[indice]
 
+  const confirmacao = confirm(
+    "Deseja inscrever o candidato " + candidato + " na vaga " + indice + "?\n" +
+    "Nome: " + vaga.nome + "\nDescrição: " + vaga.descricao + "\nData limite: " + vaga.dataLimite
+  )
+
+  if (confirmacao) {
+    vaga.candidatos.push(candidato)
+    alert("Inscrição realizada")
+  } 
 }
 
 
@@ -134,6 +159,18 @@ function inscreverCandidato() {
 // Função excluir uma vaga
 //A opção de excluir uma vaga deve pedir o índice da vaga, mostrar suas informações e pedir que o usuário confirme a exclusão da vaga antes de realmente exclui-la.
 function excluirVaga() {
+  const indice = prompt("Informe o índice da vaga que deseja excluir:")
+  const vaga = vagas[indice]
 
+  const confirmacao = confirm(
+    "Tem certeza que deseja excluir a vaga " + indice + "?\n" +
+    "Nome: " + vaga.nome + "\nDescrição: " + vaga.descricao + "\nData limite: " + vaga.dataLimite
+  )
+
+  if (confirmacao) {
+    vagas.splice(indice, 1)
+    alert("Vaga excluída.")
+  }
 }
+
 
