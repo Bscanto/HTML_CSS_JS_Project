@@ -118,6 +118,12 @@ if( confirmacao) {
 //A opção de visualizar uma vaga deve pedir o índice da vaga e mostrar todas as informações dela: índice, nome, descrição, data limite, quantidade de candidatos e o nome dos candidatos.
 function exibirVaga() {
   const indice = prompt("Informe o índice da vaga que deseja exibir:")
+  
+  if(indice >= vagas.length || indice < 0){
+    alert("Indice Inválido")
+    return
+  } 
+
   const vaga = vagas[indice]
 
   const candidatosEmTexto = vaga.candidatos.reduce((textoFinal, candidato) => textoFinal + "\n - " + candidato, "")
@@ -126,7 +132,7 @@ function exibirVaga() {
   alert(
     "Vaga nº " + indice +
     "\nNome: " + vaga.nome +
-    "\nDescrição: " + vaga.descricao +
+    "\nDescrição: " + vaga.descrição +
     "\nData limite: " + vaga.dataLimite +
     "\nQuantidade de candidatos: " + vaga.candidatos.length +
     "\nCandidatos inscritos:" + candidatosEmTexto

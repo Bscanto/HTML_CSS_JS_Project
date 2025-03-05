@@ -16,7 +16,7 @@ console.log(arr[1][1])
 console.log(arr[2])
 console.log(arr[2][1])
 console.log(arr[2][1][1])// OI, MUNDO!
-
+console.log(' ')
 
 
 // Podemos ver claramente a estrutura de uma matriz em uma tabela
@@ -25,7 +25,10 @@ const matriz = [
   ["l2, c1", "l2, c2", "l2, c3", "l2, c4"],
   ["l3, c1", "l3, c2", "l3, c3", "l3, c4"],
 ]
-console.table(matriz)
+console.log('Imprimindo a matriz')
+console.table(matriz) // formato tabela
+console.log(' ')
+console.log(' ')
 
 console.log("matriz com nova linha no final da array")
 matriz.push(["Nova Linha"])
