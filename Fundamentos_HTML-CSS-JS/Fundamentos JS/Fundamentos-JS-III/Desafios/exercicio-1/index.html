@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Escalação do Time</title>
-   
    
 </head>
 <body>
+
+    <div class="container">
+        <h1>Escalação do time</h1>
+        <br>
+
+        <div class="formulario">
+            <h2>Escalar jogador</h2>
+
+            <label for="posicao">Posição:</label>
+            <input type="text" id="position" placeholder="Posição do jogador">
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="name" placeholder="Nome do jogador">
+            
+            <label for="numero">Número da Camisa:</label>
+            <input type="number" id="number" placeholder="Número da camisa">
+          <br>
+        <button class="btn-add" id="escalar" onclick="addPlayer()">Escalar Jogador</button>
+        </div>
+        <hr>
+        <h2>Time:</h2>
+        <ul id="teamList"></ul>
+        <hr>
+        <br>
+        <h2>Remover Jogador</h2>
+        <label for="numberToRemove">Número:</label>
+        <input type="number" id="numberToRemove">
+        <br>
+        <button class="btn-remove" id="escalar" onclick="removePlayer()">Remover Jogador</button>
+    </div>
+   
+   
 
   <script src="index.js"></script>
 </body>
