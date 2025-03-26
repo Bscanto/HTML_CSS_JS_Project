@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trabalhando com Eventos no Javascript</title>
-  <script src="./index.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,8 +15,8 @@
     <h2>Registre-se!</h2>
 
     <hr>
-  
-    <section >
+
+    <section>
       <label for="username">Nome de Usuário:</label>
       <input type="text" name="username" id="username">
       <br>
@@ -28,6 +27,7 @@
       <input type="password" name="passwordConfirmation" id="passwordConfirmation">
       <br>
       <button class="btn-add" id="register-button">Registrar</button>
+      <button class="btn-add" onclick="removeEvent()">Remover Event Listener</button>
     </section>
   </div>
 
