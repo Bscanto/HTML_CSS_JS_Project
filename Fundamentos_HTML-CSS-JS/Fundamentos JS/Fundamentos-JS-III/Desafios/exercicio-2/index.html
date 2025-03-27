@@ -12,16 +12,17 @@
 <body>
   <div class="container">
     <h1>Cadastro de Devs!</h1>
-    <h2>Lista Cadastro Devs</h2>
+    <h2>Cadastrar novo desenvolvedore</h2>
 
     <hr>
 
     <form id="devForm">
       <label for="devName">Nome Completo:</label>
-      <input type="text" id="devName" required>
-
-      <button class="btn-blue" type="button" onclick="addTech()">Adicionar Tecnologia</button>
-      
+      <input type="text" id="devName" placeholder="Digite seu nome" required>
+      <br>
+      <label for="tecnologias">Tecnologias</label>
+      <br>
+      <button class="btn-blue" type="button" id="addTechBtn" onclick="addTech()">Adicionar Tecnologia</button>
 
       <ul id="techList">
         <!-- Tecnologias e seu tempo de experiencia-->
