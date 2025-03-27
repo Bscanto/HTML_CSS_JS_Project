@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com Eventos no Javascript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cadastro de Devs!</h1>
+    <h2>Lista Cadastro Devs</h2>
+
+    <hr>
+
+    <form id="devForm">
+      <label for="devName">Nome Completo:</label>
+      <input type="text" id="devName" required>
+
+      <button class="btn-blue" type="button" onclick="addTech()">Adicionar Tecnologia</button>
+      
+
+      <ul id="techList">
+        <!-- Tecnologias e seu tempo de experiencia-->
+      </ul>
+      
+      <br>
+      <button class="btn-add" type="submit">Cadastrar</button>
+    </form>
+
+
+    <h2>Desenvolvedores Cadastrados</h2>
+    <ul id="devList">
+      <!-- Lista de desenvolvedores -->
+    </ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
