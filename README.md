@@ -43,6 +43,6 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou env
 
 📬 Contato
 Autor: Bruno Canto
-LinkedIn: [Seu LinkedIn](https://www.linkedin.com/in/brunosilvacanto/)
+LinkedIn: [BrunoCanto](https://www.linkedin.com/in/brunosilvacanto/)
 E-mail: bruno_scanto@hotmail.com
 Aproveite os estudos e divirta-se criando! 🚀
