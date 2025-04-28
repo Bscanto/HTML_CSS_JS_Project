@@ -1,0 +1,141 @@
+:root {
+  --bg-color: #202325;
+  --font-color: #ffffff;
+  --btn-lightGray: #3f3f3f;
+  --btn-darkGray: #272727;
+  --btn-orange: #df8020;
+  --border-color: #666;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--border-color);
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 32px 0;
+  width: 100%;
+}
+
+.display {
+  background-color: var(--border-color);
+  color: var(--font-color);
+  font-size: 48px;
+  width: 700px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  min-height: 80px;
+  text-align: right;
+}
+
+
+.container {
+  width: 700px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.container[data-theme="dark"] {
+  background-color: #333;
+  color: var(--font-color);
+}
+
+
+.container[data-theme="light"]   {
+  background-color:  var(--font-color);
+  color: var(--bg-color);
+}
+
+.container[data-theme="light"] #input {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.container[data-theme="light"] .charKey:not(.orange),
+.container[data-theme="light"] .charKeyButton {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.container[data-theme="light"] .charKey:not(.orange):hover,
+.container[data-theme="light"] .charKeyButton:hover {
+  background-color: #e6e6e6;
+}
+
+/* Botão para alternar tema */
+#themeSwitcher {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-size: 15PX;
+  font-weight: 800;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+}
+
+.container[data-theme="dark"] #themeSwitcher {
+  background-color: var(--font-color);
+  color: var(--bg-color);
+}
+
+.container[data-theme="light"] #themeSwitcher {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+
+
+
+/* Grid de teclas */
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.charKey {
+  padding: 32px;
+  font-size: 24px;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--btn-darkGray);
+  color: var(--b-color);
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.charKey:hover {
+  background-color: var(--border-color);
+}
+
+
+/* Cores opcionais para botões */
+.lightGray {
+  background-color: var(--btn-lightGray);
+}
+
+.darkGray {
+  background-color: var(--btn-darkGray);
+}
+
+.orange {
+  background-color: var(--btn-orange);
+}
+.orange:hover {
+  background-color:#dfaf20;
+}

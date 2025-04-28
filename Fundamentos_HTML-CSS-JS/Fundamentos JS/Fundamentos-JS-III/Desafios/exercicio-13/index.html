@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe / Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tic-Tac-Toe / Jogo da Velha</h1>
+    <hr>
+    <br>
+    <label for="player1">Nome Jogador "X"</label>
+    <input type="text" id="player1" placeholder="Digite o nome do jogador (X) ">
+    <br>
+    <label for="player2">Nome Jogador "O"</label>
+    <input type="text" id="player2" placeholder="Digite o nome do jogador (O) ">
+    <br>
+    <button class="btn-blue" onclick="startGame()">Iniciar Jogo</button>
+    <hr>
+    <div class="jogadorVez" id="jogando">
+      <label for="" id="vez">Jogador da Vez:</label>
+
+
+      <br>
+      <button class="btn-add" onclick="resetGame()">Reiniciar</button>
+    </div>
+
+
+
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

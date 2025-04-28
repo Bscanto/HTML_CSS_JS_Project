@@ -16,11 +16,15 @@ function ola(){
 console.log("Executando a função")
 ola();
 
+
+
+
+
+
 //PARAMETRO DE UMA FUNÇÃO
 // O parâmetro é a entrada da função.
 
-// Ele é como uma variável que fica disponível dentro da função
-// mas que é informada na hora de chamar a função
+// Ele é como uma variável que fica disponível dentro da função mas que é informada na hora de chamar a função
 function dobro(x){
   alert("O dobro de " + x + " é " + (x * 2));
 }
@@ -28,7 +32,7 @@ function dobro(x){
 // o valor usado para ele será o undefined
 //dobro()
 
-//dobro(5);
+dobro(5);
 //dobro(7);
 
 // Valor padrão para os parâmetros
