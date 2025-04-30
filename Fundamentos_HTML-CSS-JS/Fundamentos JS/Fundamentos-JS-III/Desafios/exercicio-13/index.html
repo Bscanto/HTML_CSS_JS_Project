@@ -14,21 +14,28 @@
     <h1>Tic-Tac-Toe / Jogo da Velha</h1>
     <hr>
     <br>
-    <label for="player1">Nome Jogador "X"</label>
-    <input type="text" id="player1" placeholder="Digite o nome do jogador (X) ">
-    <br>
-    <label for="player2">Nome Jogador "O"</label>
-    <input type="text" id="player2" placeholder="Digite o nome do jogador (O) ">
-    <br>
-    <button class="btn-blue" onclick="startGame()">Iniciar Jogo</button>
-    <hr>
-    <div class="jogadorVez" id="jogando">
-      <label for="" id="vez">Jogador da Vez:</label>
-
-
+    <div class="player-inputs">
+      <label for="player1">Nome Jogador "X"</label>
+      <input type="text" id="player1" placeholder="Digite o nome do jogador (X) ">
       <br>
+      <label for="player2">Nome Jogador "O"</label>
+      <input type="text" id="player2" placeholder="Digite o nome do jogador (O) ">
+      <br>
+      <button class="btn-blue" onclick="startGame()">Iniciar Jogo</button>
+      <hr>
+    </div>
+
+
+
+    <div class="game" id="game">
+      <h2 id="turnInfo"></h2>
+      <div class="board" id="board">
+       
+      </div>
+      <h3 id="result"></h3>
       <button class="btn-add" onclick="resetGame()">Reiniciar</button>
     </div>
+
 
 
 
